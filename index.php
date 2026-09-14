@@ -58,6 +58,7 @@ $resultado = $conexao->query($sql);
             </div>
 
             <button type="submit">CADASTRAR PRODUTO</button>
+            <button type="submit">VENDER PRODUTO</button>
         </form>
 
         <h1>📋 Inventário</h1>
@@ -111,9 +112,6 @@ $resultado = $conexao->query($sql);
                 </td>
 
                 <td>
-                    <a href="vender.php?id=<?php echo $produto['id']; ?>" class="vender">
-                        Vender
-                    </a>
 
                     <a 
                         href="excluir.php?id=<?php echo $produto['id']; ?>" 
